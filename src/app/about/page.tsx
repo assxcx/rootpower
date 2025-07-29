@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import { ArrowLeft, Leaf, Sparkles, Heart, Shield, Truck, Users, Award, Globe, Flower } from 'lucide-react';
+import Link from 'next/link';
 import Header from '../../components/Header';
 import AmbientBackground from '../../components/AmbientBackground';
 
@@ -86,10 +87,10 @@ export default function About() {
         <section className="relative overflow-hidden">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
             <div className="text-center">
-              <a href="/" className="inline-flex items-center text-emerald-300 hover:text-emerald-200 mb-8 transition-colors">
+              <Link href="/" className="inline-flex items-center text-emerald-300 hover:text-emerald-200 mb-8 transition-colors">
                 <ArrowLeft className="h-5 w-5 mr-2" />
                 Back to Home
-              </a>
+              </Link>
               <div className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-emerald-500/20 to-green-500/20 backdrop-blur-md text-emerald-100 rounded-full text-sm font-medium mb-8 border border-emerald-400/30 shadow-lg">
                 <Sparkles className="h-4 w-4 mr-2 text-emerald-300" />
                 About RootPower
@@ -97,11 +98,11 @@ export default function About() {
               <h1 className="text-6xl lg:text-7xl font-bold text-white mb-8 drop-shadow-2xl leading-tight">
                 Our Story
               </h1>
-              <p className="text-xl text-emerald-100 mb-10 leading-relaxed drop-shadow-lg max-w-4xl mx-auto">
-                RootPower was born from a deep passion for plants and a mission to bring the world's most beautiful 
-                specimens to plant enthusiasts everywhere. We specialize in both rare, exotic plants and stunning succulents, 
-                offering something special for every collector and beginner alike.
-              </p>
+                              <p className="text-xl text-emerald-100 mb-10 leading-relaxed drop-shadow-lg max-w-4xl mx-auto">
+                  RootPower was born from a deep passion for plants and a mission to bring the world&apos;s most beautiful 
+                  specimens to plant enthusiasts everywhere. We specialize in both rare, exotic plants and stunning succulents, 
+                  offering something special for every collector and beginner alike.
+                </p>
             </div>
           </div>
         </section>
@@ -134,7 +135,7 @@ export default function About() {
                 <h2 className="text-4xl font-bold text-white mb-8 drop-shadow-2xl">Our Mission</h2>
                 <p className="text-lg text-emerald-100 mb-6 leading-relaxed">
                   We believe that every home deserves the beauty and tranquility that plants bring. Our mission is to 
-                  connect plant lovers with exceptional specimens, whether you're seeking the rarest of rare plants or 
+                  connect plant lovers with exceptional specimens, whether you&apos;re seeking the rarest of rare plants or 
                   the most stunning succulents to brighten your space.
                 </p>
                 <p className="text-lg text-emerald-100 mb-6 leading-relaxed">

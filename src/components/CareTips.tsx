@@ -3,7 +3,7 @@
 import { Droplets, Sun, Thermometer, Leaf, Sparkles } from 'lucide-react';
 
 interface CareTip {
-  icon: any;
+  icon: React.ComponentType<{ className?: string }>;
   title: string;
   description: string;
   category: 'rare' | 'succulents' | 'general';

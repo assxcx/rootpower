@@ -1,7 +1,8 @@
 'use client';
 
 import { useState } from 'react';
-import { ArrowLeft, BookOpen, Calendar, User, Tag, Heart, Share2, MessageCircle, Leaf, Sparkles } from 'lucide-react';
+import { ArrowLeft, BookOpen, Heart, Share2, MessageCircle, Leaf, Sparkles } from 'lucide-react';
+import Link from 'next/link';
 import Header from '../../components/Header';
 import AmbientBackground from '../../components/AmbientBackground';
 
@@ -185,10 +186,10 @@ export default function Blog() {
         <section className="relative overflow-hidden">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
             <div className="text-center">
-              <a href="/" className="inline-flex items-center text-emerald-300 hover:text-emerald-200 mb-8 transition-colors">
+              <Link href="/" className="inline-flex items-center text-emerald-300 hover:text-emerald-200 mb-8 transition-colors">
                 <ArrowLeft className="h-5 w-5 mr-2" />
                 Back to Home
-              </a>
+              </Link>
               <div className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-emerald-500/20 to-green-500/20 backdrop-blur-md text-emerald-100 rounded-full text-sm font-medium mb-8 border border-emerald-400/30 shadow-lg">
                 <BookOpen className="h-4 w-4 mr-2 text-emerald-300" />
                 Plant Blog

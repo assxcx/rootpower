@@ -1,12 +1,13 @@
 'use client';
 
 import { useState } from 'react';
-import { ArrowLeft, Droplets, Sun, Thermometer, Leaf, Sparkles, BookOpen, Video, Users, MessageCircle } from 'lucide-react';
+import { ArrowLeft, Droplets, Sun, Thermometer, Leaf, Sparkles, BookOpen, Users, MessageCircle } from 'lucide-react';
+import Link from 'next/link';
 import Header from '../../components/Header';
 import AmbientBackground from '../../components/AmbientBackground';
 
 interface CareGuide {
-  icon: any;
+  icon: React.ComponentType<{ className?: string }>;
   title: string;
   description: string;
   tips: string[];
@@ -148,10 +149,10 @@ export default function Care() {
         <section className="relative overflow-hidden">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
             <div className="text-center">
-              <a href="/" className="inline-flex items-center text-emerald-300 hover:text-emerald-200 mb-8 transition-colors">
+              <Link href="/" className="inline-flex items-center text-emerald-300 hover:text-emerald-200 mb-8 transition-colors">
                 <ArrowLeft className="h-5 w-5 mr-2" />
                 Back to Home
-              </a>
+              </Link>
               <div className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-emerald-500/20 to-green-500/20 backdrop-blur-md text-emerald-100 rounded-full text-sm font-medium mb-8 border border-emerald-400/30 shadow-lg">
                 <BookOpen className="h-4 w-4 mr-2 text-emerald-300" />
                 Plant Care Guide
@@ -159,10 +160,10 @@ export default function Care() {
               <h1 className="text-6xl lg:text-7xl font-bold text-white mb-8 drop-shadow-2xl leading-tight">
                 Plant Care
               </h1>
-              <p className="text-xl text-emerald-100 mb-10 leading-relaxed drop-shadow-lg max-w-4xl mx-auto">
-                Expert tips and comprehensive guides to help your plants thrive. 
-                From rare specimens to stunning succulents, we've got you covered.
-              </p>
+                              <p className="text-xl text-emerald-100 mb-10 leading-relaxed drop-shadow-lg max-w-4xl mx-auto">
+                  Expert tips and comprehensive guides to help your plants thrive. 
+                  From rare specimens to stunning succulents, we&apos;ve got you covered.
+                </p>
             </div>
           </div>
         </section>

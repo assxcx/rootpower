@@ -3,7 +3,7 @@
 import { Users, Award, Truck, Heart, Star, Globe, Sparkles, Leaf } from 'lucide-react';
 
 interface Stat {
-  icon: any;
+  icon: React.ComponentType<{ className?: string }>;
   value: string;
   label: string;
   description: string;

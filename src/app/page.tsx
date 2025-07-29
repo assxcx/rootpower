@@ -1,9 +1,8 @@
 'use client';
 
 import { useState } from 'react';
-import { ArrowRight, Leaf, Sparkles, Search, Heart, ShoppingCart, User, Menu } from 'lucide-react';
+import { ArrowRight, Leaf, Sparkles } from 'lucide-react';
 import Header from '../components/Header';
-import PlantCard from '../components/PlantCard';
 import FeaturedSection from '../components/FeaturedSection';
 import CareTips from '../components/CareTips';
 import StatsSection from '../components/StatsSection';
@@ -135,7 +134,7 @@ export default function Home() {
                 </h1>
                 <p className="text-xl text-emerald-100 mb-10 leading-relaxed drop-shadow-lg max-w-2xl">
                   Your trusted source for premium plants and botanical treasures. 
-                  From exotic rare specimens to stunning succulents, we bring nature's beauty to your home.
+                  From exotic rare specimens to stunning succulents, we bring nature&apos;s beauty to your home.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-6">
                   <a href="/shop" className="bg-gradient-to-r from-emerald-600 to-green-600 backdrop-blur-sm text-white px-10 py-5 rounded-xl text-lg font-semibold hover:from-emerald-700 hover:to-green-700 transition-all duration-300 flex items-center justify-center border border-emerald-500/30 shadow-2xl hover:shadow-emerald-500/25 hover:scale-105">

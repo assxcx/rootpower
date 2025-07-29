@@ -1,7 +1,8 @@
 'use client';
 
 import { useState } from 'react';
-import { ArrowLeft, Users, MessageCircle, Heart, Star, Share2, Camera, BookOpen, Calendar, Leaf } from 'lucide-react';
+import { ArrowLeft, Users, MessageCircle, Heart, Share2, Camera, BookOpen, Calendar, Leaf } from 'lucide-react';
+import Link from 'next/link';
 import Header from '../../components/Header';
 import AmbientBackground from '../../components/AmbientBackground';
 
@@ -153,10 +154,10 @@ export default function Community() {
         <section className="relative overflow-hidden">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
             <div className="text-center">
-              <a href="/" className="inline-flex items-center text-emerald-300 hover:text-emerald-200 mb-8 transition-colors">
+              <Link href="/" className="inline-flex items-center text-emerald-300 hover:text-emerald-200 mb-8 transition-colors">
                 <ArrowLeft className="h-5 w-5 mr-2" />
                 Back to Home
-              </a>
+              </Link>
               <div className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-emerald-500/20 to-green-500/20 backdrop-blur-md text-emerald-100 rounded-full text-sm font-medium mb-8 border border-emerald-400/30 shadow-lg">
                 <Users className="h-4 w-4 mr-2 text-emerald-300" />
                 Plant Community
@@ -164,11 +165,11 @@ export default function Community() {
               <h1 className="text-6xl lg:text-7xl font-bold text-white mb-8 drop-shadow-2xl leading-tight">
                 Plant Community
               </h1>
-              <p className="text-xl text-emerald-100 mb-10 leading-relaxed drop-shadow-lg max-w-4xl mx-auto">
-                Connect with fellow plant enthusiasts, share your plant journey, 
-                and learn from the community. From rare specimens to stunning succulents, 
-                we're all here to grow together.
-              </p>
+                              <p className="text-xl text-emerald-100 mb-10 leading-relaxed drop-shadow-lg max-w-4xl mx-auto">
+                  Connect with fellow plant enthusiasts, share your plant journey, 
+                  and learn from the community. From rare specimens to stunning succulents, 
+                  we&apos;re all here to grow together.
+                </p>
               <div className="flex flex-col sm:flex-row gap-6 justify-center">
                 <button className="bg-gradient-to-r from-emerald-600 to-green-600 backdrop-blur-sm text-white px-10 py-4 rounded-xl text-lg font-semibold hover:from-emerald-700 hover:to-green-700 transition-all duration-300 flex items-center justify-center border border-emerald-500/30 shadow-2xl hover:shadow-emerald-500/25 hover:scale-105">
                   <MessageCircle className="mr-3 h-6 w-6" />
